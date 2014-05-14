@@ -88,6 +88,7 @@ var nodesById = {};
 for (var i = 0; i < nodeCollection.length; i++) nodesById[nodeCollection[i].data.id] = nodeCollection[i];
 
 var rootNodeItemsContainer = document.createElement("ul");
+rootNodeItemsContainer.className = "menu";
 
 // the magic happens here:
 // every node finds its parent (by the id), and it's being adopted by the parent's children element

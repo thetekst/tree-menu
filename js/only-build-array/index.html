@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="tree.js"></script>
+	<script>
+		$.getJSON( "data.json").done(function(json) {
+			multiConverter = new MultiConverter();
+			var res = multiConverter.builddata(json);
+			console.log(res);
+			$('<pre>', {
+				'text': JSON.stringify(res, "", 4)
+			}).appendTo('body');
+		});
+	</script>
+</body>
+</html>
