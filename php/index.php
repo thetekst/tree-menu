@@ -45,5 +45,5 @@ $menu = array(
 ?>
 
 <ul class="menu">
-	<?php treeMenuBuilder::get($menu);?>
+	<?php TreeMenuBuilder::get($menu);?>
 </ul>
